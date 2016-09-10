@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/bg_dilog">
+<TextView
+    android:id="@+id/tv_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/add_a_drop"
+    android:layout_marginTop="36dp"
+    android:layout_marginBottom="36dp"
+    android:textSize="18sp"/>
+<ImageButton
+    android:background="@null"
+    android:id="@+id/btn_close"
+    android:layout_width="17dp"
+    android:layout_height="12dp"
+    android:layout_marginRight="25dp"
+    android:layout_alignTop="@+id/tv_title"
+    android:layout_alignParentRight="true"
+    android:layout_alignBottom="@+id/tv_title"
+
+    android:src="@drawable/ic_action_cancel"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tv_title"
+    android:hint="What is it?"
+    android:singleLine="true"
+    android:background="@drawable/bg_et_add"
+    android:inputType="textVisiblePassword"
+    android:padding="16dp"
+    android:id="@+id/et_drop"/>
+<com.example.abhinav.bucketdrop.widget.BucketPickerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/datepicker"
+    android:layout_marginTop="64dp"
+    android:layout_marginBottom="64dp"
+    android:layout_below="@+id/et_drop"></com.example.abhinav.bucketdrop.widget.BucketPickerView>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/datepicker"
+    android:background="@drawable/bg_btn_add_it"
+    android:text="Add it"
+    android:id="@+id/AddIt"/>
+</RelativeLayout>
+    </ScrollView>

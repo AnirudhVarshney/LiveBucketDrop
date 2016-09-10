@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abhinav.bucketdrop.MainActivity">
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"></include>
+
+    <com.example.abhinav.bucketdrop.widget.BucketRecyclerView
+        android:id="@+id/rv_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"></com.example.abhinav.bucketdrop.widget.BucketRecyclerView>
+
+    <include
+        android:id="@+id/empty_drops"
+        layout="@layout/empty_drop"></include>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dilog">
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:layout_marginRight="12dp"
+        android:layout_above="@+id/btn_completed"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_action_cancel" />
+
+    <Button
+        android:id="@+id/btn_completed"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_check"
+        android:layout_marginTop="96dp"
+        android:layout_marginBottom="96dp"
+        android:drawablePadding="16dp"
+        android:background="@null"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:text="Mark Completed"/>
+
+</RelativeLayout>

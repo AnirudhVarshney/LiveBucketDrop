@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--item name="android:fontFamily">@string/sans-serif-thin</item--><!--not working in 15 so for 16 above in values-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="DialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+    <style name="ToolbarStyle" parent="Theme.AppCompat.Light">
+    <item name="android:colorBackground">@color/green</item>
+    <item name="android:textColor">@color/dark_blue</item>
+    </style>
+    <style name="DatePickerItemStyle">
+        <item name="android:layout_width">@dimen/tv_picker_item_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/bg_picker_drawable_bckground</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/purple</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/tv_month"
+        android:layout_width="@dimen/tv_picker_item_width"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:drawableTop="@drawable/up_normal"
+        android:text="JAN"
+        android:drawableBottom="@drawable/down_normal"
+        android:drawablePadding="@dimen/tv_picker_item_drawable_padding"
+        android:background="@drawable/bg_picker_drawable_bckground"
+        android:textColor="@color/purple"
+        android:textSize="@dimen/tv_picker_item_font_size"/>
+    <Space
+        android:layout_width="@dimen/bpv_space"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="10"
+
+        android:id="@+id/tv_date"
+        android:drawablePadding="@dimen/tv_picker_item_drawable_padding"
+        android:drawableTop="@drawable/up_normal"
+        android:drawableBottom="@drawable/down_normal"
+        style="@style/DatePickerItemStyle" />
+    <Space
+        android:layout_width="@dimen/bpv_space"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="@dimen/tv_picker_item_width"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:drawablePadding="@dimen/tv_picker_item_drawable_padding"
+        android:background="@drawable/bg_picker_drawable_bckground"
+        android:text="2021"
+        android:drawableTop="@drawable/up_normal"
+        android:drawableBottom="@drawable/down_normal"
+        android:gravity="center"
+        android:textColor="@color/purple"
+        android:textSize="@dimen/tv_picker_item_font_size"/>
+
+</LinearLayout>
